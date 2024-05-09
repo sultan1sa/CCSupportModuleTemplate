@@ -3,7 +3,7 @@ description: chai
 scriptings:
 - http_response:
     name: Bsjs
-    match: https://api.revenuecat.com/v1/receipts
+    match: ^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$)
     script_url: https://raw.githubusercontent.com/sultan1sa/Script-conf/main/Js/Bsjs.js
     timeout: 60
     body_required: true
